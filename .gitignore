@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if you add D3/build tooling later)
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Env / secrets (just in case you ever add API keys for something)
+.env
+.env.local
+
+# Misc
+*.log
+.tmp/
