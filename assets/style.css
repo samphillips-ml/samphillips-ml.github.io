@@ -10,7 +10,7 @@
   --link-visited: #5a3f7c;
   --rule: #d8d4cc;
   --bg: #fdfcfa;
-  --max-width: 700px;
+  --max-width: 1100px;
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
   --sans: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
@@ -39,10 +39,19 @@ body {
   padding: 0 24px 80px;
 }
 
-/* ---------- Header / nav ---------- */
+/* ---------- Header / nav banner ---------- */
 
-header.site-header {
-  padding: 40px 0 0;
+.site-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 24px;
+  margin-bottom: 36px;
+  background-image: url('navbar_background.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .site-title {
@@ -50,36 +59,45 @@ header.site-header {
   font-size: 15px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--muted);
-  margin: 0 0 16px;
+  color: #fff;
+  margin: 0;
 }
 
-.site-title a {
-  color: var(--muted);
+.site-title a,
+.site-title a:visited {
+  color: #fff;
   text-decoration: none;
 }
 
 nav.site-nav {
   font-family: var(--sans);
   font-size: 15px;
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 14px;
-  margin-bottom: 36px;
 }
 
 nav.site-nav a {
-  color: var(--text);
+  color: #fff;
   text-decoration: none;
   margin-right: 22px;
 }
 
+nav.site-nav a:last-child {
+  margin-right: 0;
+}
+
 nav.site-nav a:hover {
-  color: var(--link);
+  color: #d8d4cc;
 }
 
 nav.site-nav a.current {
-  border-bottom: 2px solid var(--text);
+  border-bottom: 2px solid #fff;
   padding-bottom: 2px;
+}
+
+@media (max-width: 540px) {
+  .site-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* ---------- Typography ---------- */
