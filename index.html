@@ -57,6 +57,66 @@
         See the <a href="research.html">Research</a> page for more on current projects,
         or <a href="cv.html">my CV</a> for the full picture.
 </p>
+<hr class="divider">
+<h2>Talks</h2>
+<ul class="plain">
+<li><strong>Modeling the Transport of Forever Chemicals in the Arctic</strong><br>
+<span class="muted">National Conference on Undergraduate Research (NCUR), 2026</span></li>
+<li><strong>Learning Ocean Dynamics from Sparse Data Using Scientific AI</strong><br>
+<span class="muted">UNC Charlotte Undergraduate Research Conference (URC), 2026</span></li>
+<li><strong>Using Data Science to Model Global Microplastic Transport</strong><br>
+<span class="muted">UNC Charlotte OUR Honors Symposium, 2025</span></li>
+</ul>
+<div class="carousel" id="talks-carousel">
+<div class="carousel-track">
+<figure class="carousel-slide">
+<img src="assets/NCUR_2026_Talk.jpeg" alt="Presenting at NCUR 2026">
+<figcaption>NCUR 2026 &mdash; Modeling the Transport of Forever Chemicals in the Arctic</figcaption>
+</figure>
+<figure class="carousel-slide">
+<img src="assets/UNCC_URC26_talk.jpeg" alt="Presenting at UNCC URC 2026">
+<figcaption>UNCC URC 2026 &mdash; Learning Ocean Dynamics from Sparse Data Using Scientific AI</figcaption>
+</figure>
+<figure class="carousel-slide">
+<img src="assets/Honors_symposium25_talk.webp" alt="Presenting at the UNCC OUR Honors Symposium 2025">
+<figcaption>UNCC OUR Honors Symposium 2025 &mdash; Using Data Science to Model Global Microplastic Transport</figcaption>
+</figure>
+</div>
+<button class="carousel-btn prev" aria-label="Previous photo" type="button">&#8249;</button>
+<button class="carousel-btn next" aria-label="Next photo" type="button">&#8250;</button>
+<div class="carousel-dots" role="tablist" aria-label="Slide navigation">
+<button class="carousel-dot is-active" type="button" aria-label="Slide 1"></button>
+<button class="carousel-dot" type="button" aria-label="Slide 2"></button>
+<button class="carousel-dot" type="button" aria-label="Slide 3"></button>
+</div>
+</div>
+<script>
+(function () {
+  var carousel = document.getElementById('talks-carousel');
+  var track = carousel.querySelector('.carousel-track');
+  var slides = carousel.querySelectorAll('.carousel-slide');
+  var dots = carousel.querySelectorAll('.carousel-dot');
+  var index = 0;
+
+  function show(i) {
+    index = (i + slides.length) % slides.length;
+    track.style.transform = 'translateX(-' + (index * 100) + '%)';
+    dots.forEach(function (dot, di) {
+      dot.classList.toggle('is-active', di === index);
+    });
+  }
+
+  carousel.querySelector('.prev').addEventListener('click', function () {
+    show(index - 1);
+  });
+  carousel.querySelector('.next').addEventListener('click', function () {
+    show(index + 1);
+  });
+  dots.forEach(function (dot, di) {
+    dot.addEventListener('click', function () { show(di); });
+  });
+})();
+</script>
 </main>
 <footer>
 <a href="mailto:sphill86@uncc.edu">Email</a>
