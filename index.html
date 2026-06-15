@@ -71,36 +71,52 @@
 <div class="carousel-track">
 <figure class="carousel-slide">
 <img src="assets/NCUR_2026_Talk.jpeg" alt="Presenting at NCUR 2026">
-<figcaption>NCUR 2026 &mdash; Modeling the Transport of Forever Chemicals in the Arctic</figcaption>
 </figure>
 <figure class="carousel-slide">
 <img src="assets/UNCC_URC26_talk.jpeg" alt="Presenting at UNCC URC 2026">
-<figcaption>UNCC URC 2026 &mdash; Learning Ocean Dynamics from Sparse Data Using Scientific AI</figcaption>
 </figure>
 <figure class="carousel-slide">
 <img src="assets/Honors_symposium25_talk.webp" alt="Presenting at the UNCC OUR Honors Symposium 2025">
-<figcaption>UNCC OUR Honors Symposium 2025 &mdash; Using Data Science to Model Global Microplastic Transport</figcaption>
 </figure>
 </div>
+<p class="carousel-caption">NCUR 2026 &mdash; Modeling the Transport of Forever Chemicals in the Arctic</p>
+<div class="carousel-controls">
 <button class="carousel-btn prev" aria-label="Previous photo" type="button">&#8249;</button>
-<button class="carousel-btn next" aria-label="Next photo" type="button">&#8250;</button>
 <div class="carousel-dots" role="tablist" aria-label="Slide navigation">
 <button class="carousel-dot is-active" type="button" aria-label="Slide 1"></button>
 <button class="carousel-dot" type="button" aria-label="Slide 2"></button>
 <button class="carousel-dot" type="button" aria-label="Slide 3"></button>
 </div>
+<button class="carousel-btn next" aria-label="Next photo" type="button">&#8250;</button>
+</div>
 </div>
 <script>
 (function () {
   var carousel = document.getElementById('talks-carousel');
-  var track = carousel.querySelector('.carousel-track');
   var slides = carousel.querySelectorAll('.carousel-slide');
   var dots = carousel.querySelectorAll('.carousel-dot');
+  var caption = carousel.querySelector('.carousel-caption');
+  var captions = [
+    'NCUR 2026 — Modeling the Transport of Forever Chemicals in the Arctic',
+    'UNCC URC 2026 — Learning Ocean Dynamics from Sparse Data Using Scientific AI',
+    'UNCC OUR Honors Symposium 2025 — Using Data Science to Model Global Microplastic Transport'
+  ];
   var index = 0;
 
   function show(i) {
     index = (i + slides.length) % slides.length;
-    track.style.transform = 'translateX(-' + (index * 100) + '%)';
+    var prevIndex = (index - 1 + slides.length) % slides.length;
+    var nextIndex = (index + 1) % slides.length;
+
+    slides.forEach(function (slide, si) {
+      slide.classList.remove('is-active', 'is-prev', 'is-next');
+      if (si === index) slide.classList.add('is-active');
+      else if (si === prevIndex) slide.classList.add('is-prev');
+      else if (si === nextIndex) slide.classList.add('is-next');
+    });
+
+    caption.textContent = captions[index];
+
     dots.forEach(function (dot, di) {
       dot.classList.toggle('is-active', di === index);
     });
@@ -115,6 +131,8 @@
   dots.forEach(function (dot, di) {
     dot.addEventListener('click', function () { show(di); });
   });
+
+  show(0);
 })();
 </script>
 </main>
