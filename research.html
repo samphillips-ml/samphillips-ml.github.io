@@ -1,97 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research — Samuel B. Phillips</title>
-  <link rel="stylesheet" href="assets/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Samuel B. Phillips</title>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header class="site-banner">
-    <p class="site-title"><a href="index.html">Samuel B. Phillips</a></p>
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="research.html" class="current">Research</a>
-      <a href="about.html">About</a>
-      <a href="cv.html">CV</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header class="site-banner">
+<p class="site-title"><a href="index.html">Samuel B. Phillips</a></p>
+<nav class="site-nav">
+<a href="index.html">Home</a>
+<a href="research.html" class="current">Research</a>
+<a href="about.html">About</a>
+<a href="cv.html">CV</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<div class="wrap">
+<main>
+<h1>Research</h1>
+<p class="tagline">
+        My research centers on making sequential and dynamic systems tractable
+        through learned representations &mdash; particularly in settings where direct
+        observations are sparse, indirect, or expensive. So far this has meant Arctic
+        contaminant transport, ocean biogeochemistry, and most recently, food safety
+        time series. The application domains vary, but the underlying problem &mdash;
+        recovering structure from limited data using representation spaces &mdash;
+        stays consistent.
+</p>
+<hr class="divider">
 
-  <div class="wrap">
-    <main>
-      <h1>Research</h1>
-      <p class="tagline">
-        [PLACEHOLDER — one-sentence framing for the page, e.g. "My work focuses on
-        learning useful representations of sequential and dynamic systems, applied so
-        far to environmental and ocean observation data."]
-      </p>
+<div class="entry">
+<h3>Arctic PFAS Transport Modeling</h3>
+<p class="meta">With Dr. Roger Tipton, UNC Charlotte &middot; NSF Grant #2444939</p>
+<ul class="phases">
+<li><strong>Fall 2025 (OUR Scholar):</strong> Configured and ran global-domain
+          MITgcm ocean simulations modeling passive microplastics transport &mdash;
+          groundwork in large-scale ocean modeling on HPC infrastructure.</li>
+<li><strong>Spring 2026:</strong> Designed and executed MITgcm LLC270 Arctic
+          Ocean simulations modeling PFAS transport under varying atmospheric
+          forcing conditions. Presented at NCUR 2026.</li>
+<li><strong>Summer 2026 (in progress):</strong> Developing a physics-informed
+          neural network (PINN) framework to correct TOPAZ/CMEMS Arctic simulation
+          outputs against sparse observational PFAS data (~140 samples over 20
+          years). Targeting AGU Fall 2026.</li>
+</ul>
+<div class="links">
+<!-- <a href="#">Code</a> -->
+<!-- <a href="#">NCUR Slides</a> -->
+</div>
+</div>
 
-      <hr class="divider">
+<div class="entry">
+<h3>Representation Learning for Biogeochemical State Reconstruction</h3>
+<p class="meta">With Dr. Xuyang Li, UNC Charlotte &middot; OUR Scholar</p>
+<ul class="phases">
+<li><strong>Spring 2026:</strong> Initial work modeled latent ocean dynamics
+          from Argo float profiles using neural ODEs. This outperformed simple
+          baselines but not domain-specific architectures &mdash; informing the
+          approach below.</li>
+<li><strong>Summer 2026 (in progress):</strong> Developing a transformer-based
+          architecture for biogeochemical state reconstruction from sparse float
+          observations, currently outperforming the convolutional benchmark used
+          in prior state-of-the-art work. Targeting <em>Geoscientific Model
+          Development</em> (GMD).</li>
+</ul>
+<div class="links">
+<!-- <a href="#">Code</a> -->
+</div>
+</div>
 
-      <div class="entry">
-        <h3>PINN Bias Correction for Arctic PFAS Transport</h3>
-        <p class="meta">First author &middot; in preparation</p>
-        <span class="status">In Prep — Targeting Env. Sci. &amp; Tech.</span>
-        <p>
-          [PLACEHOLDER — 2–4 sentences. What problem does this address (e.g. systematic
-          bias in physics-based PFAS transport models in Arctic environments)? What's
-          your approach (physics-informed neural network for bias correction)? What's
-          the representation-learning angle, and what's the current status?]
-        </p>
-        <div class="links">
-          <!-- <a href="#">Preprint</a> -->
-          <!-- <a href="#">Code</a> -->
-        </div>
-      </div>
+<div class="entry">
+<h3>Neural Time Series Modeling for Food Safety Prediction</h3>
+<p class="meta">NSF REU, Worcester Polytechnic Institute &middot; Advisor: Dr.
+        Fabricio Murai</p>
+<ul class="phases">
+<li><strong>Summer 2026 (in progress):</strong> Developing and evaluating deep
+          learning approaches &mdash; including time series foundation models and
+          multimodal architectures &mdash; to predict and explain bacterial growth,
+          contamination, and spoilage in food systems. Targeting MIT's
+          Undergraduate Research Conference.</li>
+</ul>
+<div class="links">
+<!-- <a href="#">Poster</a> -->
+</div>
+</div>
 
-      <div class="entry">
-        <h3>Neural ODE Latent Dynamics of Argo Float Data</h3>
-        <p class="meta">With Dr. Xuyang Li &middot; in progress</p>
-        <span class="status">In Progress</span>
-        <p>
-          [PLACEHOLDER — 2–4 sentences. What's the dataset (Argo float ocean
-          observations)? What's the modeling approach (neural ODEs over a latent
-          dynamics space)? Why does this matter — what's hard about modeling this kind
-          of sparse, irregularly-sampled physical data, and how does the latent-space
-          framing help?]
-        </p>
-        <div class="links">
-          <!-- <a href="#">Slides</a> -->
-        </div>
-      </div>
+<div class="entry">
+<h3>Representation Geometry in Multi-Agent Reinforcement Learning</h3>
+<p class="meta">With Jake Minwu Lee, UNC Charlotte</p>
+<ul class="phases">
+<li><strong>Summer 2026 (early stage):</strong> Surveying representation
+          geometry in multi-agent reinforcement learning systems, building toward
+          a proposal for UNC Charlotte's undergraduate research grant program.</li>
+</ul>
+</div>
 
-      <div class="entry">
-        <h3>NSF REU at WPI — Applied AI</h3>
-        <p class="meta">PI: Elke Rundensteiner &middot; Summer [YEAR]</p>
-        <span class="status">Completed</span>
-        <p>
-          [PLACEHOLDER — 2–4 sentences. What did you work on during the REU? What
-          methods/tools did you use, and what came out of it (results, a poster, a
-          presentation)? This is a good place to mention NCUR if the NCUR presentation
-          grew out of this work.]
-        </p>
-        <div class="links">
-          <!-- <a href="#">Poster (PDF)</a> -->
-        </div>
-      </div>
-
-      <hr class="divider">
-
-      <p class="muted">
-        I'm domain-flexible — open to applying these methods to new areas — but the
-        common thread is making sequential and dynamic data tractable through learned
-        representations.
-      </p>
-    </main>
-
-    <footer>
-      <a href="mailto:YOUR_EMAIL@example.com">Email</a>
-      <a href="https://github.com/samphillips-ml" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://orcid.org/YOUR_ORCID" target="_blank" rel="noopener">ORCID</a>
-      <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a>
-    </footer>
-  </div>
+<hr class="divider">
+<p class="muted">
+        I'm domain-flexible &mdash; the throughline across these is making sequential
+        and dynamic data tractable through learned representations, not the
+        particular domain it shows up in.
+</p>
+</main>
+<footer>
+<a href="mailto:YOUR_EMAIL@example.com">Email</a>
+<a href="https://github.com/samphillips-ml" target="_blank" rel="noopener">GitHub</a>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://orcid.org/YOUR_ORCID" target="_blank" rel="noopener">ORCID</a>
+<a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a>
+</footer>
+</div>
 </body>
 </html>
