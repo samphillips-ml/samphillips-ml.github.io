@@ -24,68 +24,143 @@
 
       <p>
         <a href="assets/CV.pdf">Download CV (PDF)</a>
-        <span class="muted">— last updated [MONTH YEAR]</span>
+        <span class="muted">— last updated June 2026</span>
       </p>
-
-      <h2>Presentations &amp; Publications</h2>
-      <ul class="plain">
-        <li>
-          <strong>[PLACEHOLDER — title of NCUR presentation]</strong><br>
-          National Conference on Undergraduate Research (NCUR), 2026.
-        </li>
-        <li class="muted">
-          [PLACEHOLDER — once the PFAS PINN manuscript is submitted, add an entry here:
-          "S. B. Phillips et al., [title], <em>in preparation</em> / <em>under
-          review</em>, target: Environmental Science &amp; Technology."]
-        </li>
-      </ul>
 
       <h2>Education</h2>
       <ul class="plain">
         <li>
-          <strong>B.S. Computer Science (Data Science) &amp; B.S. Mathematics</strong><br>
-          University of North Carolina at Charlotte &mdash; expected [YEAR]
+          <strong>B.S. Computer Science (Data Science Track)</strong><br>
+          University of North Carolina at Charlotte &mdash; Charlotte, NC<br>
+          <span class="muted">Sep. 2025 – May 2028</span>
         </li>
         <li>
-          <strong>M.S. Computer Science (early-entry)</strong><br>
-          University of North Carolina at Charlotte &mdash; in progress
+          <strong>B.S. Mathematics (Concentration in Statistics)</strong><br>
+          University of North Carolina at Charlotte &mdash; Charlotte, NC<br>
+          <span class="muted">Sep. 2023 – May 2027</span>
         </li>
+        <li class="muted">GPA: 3.69 (cumulative, both degrees) &middot; Sigma Xi, Inductee</li>
       </ul>
 
       <h2>Research Experience</h2>
-      <ul class="plain">
-        <li>
-          <strong>[PLACEHOLDER — lab/role]</strong>, Dr. Xuyang Li &mdash; [dates]<br>
-          Neural ODE latent dynamics modeling of Argo float data.
-        </li>
-        <li>
-          <strong>NSF REU, Applied AI</strong>, Worcester Polytechnic Institute
-          (PI: Elke Rundensteiner) &mdash; Summer [YEAR]
-        </li>
-        <li>
-          <strong>PINN bias correction for Arctic PFAS transport</strong> &mdash;
-          [dates]
-        </li>
-      </ul>
 
-      <h2>Honors</h2>
-      <ul class="plain">
-        <li>Sigma Xi, inductee</li>
-        <li>[PLACEHOLDER — any other honors/scholarships]</li>
-      </ul>
+      <div class="entry">
+        <h3>Arctic PFAS Transport Modeling</h3>
+        <p class="meta">UNC Charlotte &mdash; Dr. Roger Tipton (NSF Grant #2444939) &middot; Charlotte, NC &middot; Sep. 2025 – Present</p>
+        <ul class="phases">
+          <li><strong>Fall 2025 (OUR Scholar, Ocean Simulation Researcher):</strong> Configured and
+            executed global-domain MITgcm ocean simulations modeling passive microplastics
+            transport; built Python preprocessing pipelines (NumPy, scikit-learn) integrating
+            JRA55-do atmospheric forcing data. Presented at the UNC Charlotte OUR Honors
+            Symposium.</li>
+          <li><strong>Spring 2026 (OUR Scholar, Computational Simulation Researcher):</strong>
+            Designed and executed MITgcm LLC270 Arctic Ocean simulations modeling PFAS passive
+            transport under varying atmospheric forcing conditions on HPC infrastructure.
+            Presented at NCUR 2026 and the UNC Charlotte Undergraduate Research Conference (URC)
+            2026.</li>
+          <li><strong>Summer 2026 (in progress):</strong> Developing a physics-informed neural
+            network (PINN) framework to correct TOPAZ/CMEMS Arctic Ocean simulation outputs
+            against sparse observational PFAS data (~140 samples over 20 years); targeting AGU
+            Fall 2026.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>Representation Learning for Biogeochemical State Reconstruction</h3>
+        <p class="meta">UNC Charlotte &mdash; Dr. Xuyang Li (OUR Scholar) &middot; Charlotte, NC &middot; Jan. 2026 – Present</p>
+        <ul class="phases">
+          <li><strong>Spring 2026:</strong> Modeled latent ocean dynamics from Argo float profiles
+            using Neural ODEs to reconstruct unseen ocean variables from learned trajectories in a
+            compressed latent space; outperformed simple baselines (e.g., MLP).</li>
+          <li><strong>Summer 2026 (in progress):</strong> Developing a transformer-based
+            architecture for biogeochemical state reconstruction from sparse Argo float
+            observations, benchmarked against an existing convolutional approach; targeting
+            <em>Geoscientific Model Development</em> (GMD).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>Neural Time Series Modeling for Food Safety Prediction</h3>
+        <p class="meta">NSF REU, Worcester Polytechnic Institute &mdash; Advisor: Dr. Fabricio Murai &middot; Worcester, MA &middot; May 2026 – Present</p>
+        <ul class="plain">
+          <li>Selected as 1 of 14 participants nationwide for the NSF REU in Applied AI; serving as
+            Site Lead, liaising between the cohort and program directors.</li>
+          <li>Developing and evaluating deep learning approaches &mdash; including time series
+            foundation models and multimodal architectures &mdash; to predict and explain
+            bacterial growth, contamination, and spoilage in food systems over time; targeting
+            MIT's Undergraduate Research Conference.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>Representation Geometry in Multi-Agent Reinforcement Learning</h3>
+        <p class="meta">UNC Charlotte &mdash; with Jake Minwu Lee &middot; Charlotte, NC &middot; Summer 2026 – Present</p>
+        <ul class="plain">
+          <li>Surveying representation geometry in multi-agent reinforcement learning systems,
+            building toward a proposal for UNC Charlotte's undergraduate research grant program
+            (SURG).</li>
+        </ul>
+      </div>
+
+      <h2>Industry Experience</h2>
+
+      <div class="entry">
+        <h3>AI/ML Engineer Intern</h3>
+        <p class="meta">FanConnect &middot; Charlotte, NC (Remote) &middot; Jan. 2026 – Present</p>
+        <ul class="plain">
+          <li>Architected and shipped FanConnect Labs, a client-facing AI content generation
+            platform (React/Node.js) with real-time preview and iterative refinement.</li>
+          <li>Built an AI-assisted ad generation tool for FanConnect's marketing and social media
+            campaigns.</li>
+          <li>Developing a local vision-language model (VLM) to detect live game feed failures
+            across FanConnect's venue network and trigger support alerts.</li>
+        </ul>
+      </div>
 
       <h2>Teaching</h2>
+
+      <div class="entry">
+        <h3>Teaching Assistant &mdash; ITCS 2214: Data Structures &amp; Algorithms</h3>
+        <p class="meta">UNC Charlotte &middot; Charlotte, NC &middot; Sep. 2025 – Dec. 2025</p>
+        <ul class="plain">
+          <li>Held office hours and evaluated student Java implementations of core data structures
+            (hash tables, binary trees, graph algorithms).</li>
+        </ul>
+      </div>
+
+      <h2>Presentations &amp; Talks</h2>
       <ul class="plain">
-        <li>Teaching Assistant, Data Structures &mdash; UNC Charlotte, [term(s)]</li>
+        <li>&ldquo;Modeling the Transport of Forever Chemicals in the Arctic&rdquo; &mdash;
+          National Conference on Undergraduate Research (NCUR), 2026</li>
+        <li>&ldquo;Learning Ocean Dynamics from Sparse Data Using Scientific AI&rdquo; &mdash;
+          UNC Charlotte Undergraduate Research Conference (URC), 2026</li>
+        <li>&ldquo;Using Data Science to Model Global Microplastic Transport&rdquo; &mdash;
+          UNC Charlotte OUR Honors Symposium, 2025</li>
+      </ul>
+
+      <h2>Honors &amp; Activities</h2>
+      <ul class="plain">
+        <li>Sigma Xi, Inductee</li>
+        <li>OUR Scholar, Fall 2025 and Spring 2026 (25% acceptance rate)</li>
+        <li>NCUR 2026 Presenter</li>
+      </ul>
+
+      <h2>Technical Skills</h2>
+      <ul class="plain">
+        <li><strong>Languages:</strong> Python, MATLAB, Fortran, C/C++, Java, R</li>
+        <li><strong>ML &amp; Modeling:</strong> PyTorch, Deep Learning, Physics-Informed Neural
+          Networks, Neural ODEs, Transfer Learning, Latent Variable Modeling, Dynamical Systems</li>
+        <li><strong>Computational:</strong> MITgcm, HPC/SLURM, Numerical ODE/PDE Methods,
+          Scientific Computing</li>
+        <li><strong>Tools:</strong> Linux, Git, Docker, React/Node.js, NumPy, scikit-learn</li>
       </ul>
     </main>
 
     <footer>
-      <a href="mailto:YOUR_EMAIL@example.com">Email</a>
+      <a href="mailto:sphill86@uncc.edu">Email</a>
       <a href="https://github.com/samphillips-ml" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://orcid.org/YOUR_ORCID" target="_blank" rel="noopener">ORCID</a>
-      <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/sam-phillips1625/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://orcid.org/0009-0002-5877-5979" target="_blank" rel="noopener">ORCID</a>
     </footer>
   </div>
 </body>
